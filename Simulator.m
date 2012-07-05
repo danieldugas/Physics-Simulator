@@ -1,0 +1,12 @@
+clear;
+load position.txt;
+time = position(:,1);
+P1_x = position(:,2);
+P1_y = position(:,3);
+P2_x = position(:,4);
+P2_y = position(:,5);
+clear position;
+hold off;
+plot3(time, P1_x, P1_y);
+hold all;
+plot3(time, P2_x, P2_y);
